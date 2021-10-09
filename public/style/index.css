@@ -73,6 +73,8 @@ body {
   color: white;
   outline: none;
   font-size: 20px;
+  -webkit-transition: 0.5 ease-in-out;
+  transition: 0.5 ease-in-out;
 }
 
 #buttons-container button:nth-child(even) {
@@ -85,5 +87,11 @@ body {
 
 #buttons-container button[disabled] {
   background-color: grey;
+}
+
+#buttons-container button:hover {
+  background-color: #b6e8ff;
+  color: black;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
