@@ -1,0 +1,25 @@
+{
+    "name": "web-component-template",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "init": "npm i && npm link typescript",
+        "build": "webpack --progress",
+        "start-dev": "npm run build && webpack-dev-server --open --mode development",
+        "watch": "webpack --watch",
+        "ts-clean": "tsc --build --clean"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "devDependencies": {
+        "@tsconfig/node12": "^1.0.9",
+        "ts-loader": "^9.2.6",
+        "webpack": "^5.57.1",
+        "webpack-cli": "^4.9.0",
+        "webpack-dev-server": "^4.3.1"
+    }
+}
