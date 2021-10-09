@@ -89,7 +89,7 @@ body {
   background-color: grey;
 }
 
-#buttons-container button:hover {
+#buttons-container button:enabled:hover {
   background-color: #b6e8ff;
   color: black;
   cursor: pointer;

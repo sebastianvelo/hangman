@@ -64,7 +64,7 @@ body {
         &[disabled] {
             background-color: grey;
         }
-        &:hover {
+        &:enabled:hover {
             background-color:  rgb(182, 232, 255);
             color: black;
             cursor: pointer;
