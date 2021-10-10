@@ -51,7 +51,7 @@ body {
           filter: invert(100%);
 }
 
-#hangman-progress-words {
+#hangman-progress-word {
   letter-spacing: 10px;
   font-size: 40px;
 }

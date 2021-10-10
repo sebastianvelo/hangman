@@ -1,3 +1,3 @@
-import init from './scripts/Game';
+import Game from './scripts/game/Game';
 
-init();
+new Game().init();

@@ -1,5 +1,5 @@
-import Util from "../../util/Util";
 import Button from "./Button";
+import letters from "../../db/letters.js";
 
 export interface ButtonsContainerProps {
     play: (letter: string) => void;
@@ -7,13 +7,13 @@ export interface ButtonsContainerProps {
 
 const ButtonsContainer = (props: ButtonsContainerProps) => {
     const element = document.createElement('div');
-    Util.LETTERS.forEach(letter => {
+    element.setAttribute("id", "buttons-container");
+    letters.forEach(letter => {
         element.appendChild(Button({
             text: letter,
             onClick: () => props.play(letter)
         }))
     });
-    element.setAttribute("id", "buttons-container");
     return element;
 }
 
