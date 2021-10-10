@@ -1,10 +1,17 @@
 body {
+  max-width: 100vw;
+  font-family: "Arial", sans-serif;
+  color: whitesmoke;
+  background-color: #00000a;
+}
+
+#app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -12,23 +19,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 100vh;
-  width: 100vw;
-  font-family: "Arial", sans-serif;
-  color: whitesmoke;
-  background-color: #00000a;
-}
-
-#app h1 {
-  font-size: 40px;
-  text-align: center;
 }
 
 #hangman-wrapper {
   border: 1px dotted white;
   color: white;
   background-color: black;
-  width: 70vw;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +40,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px;
+  border-radius: 20px;
 }
 
 #hangman-wrapper img {
@@ -75,14 +72,16 @@ body {
   font-size: 20px;
   -webkit-transition: 0.5 ease-in-out;
   transition: 0.5 ease-in-out;
+  border: 1px dashed white;
+  border-radius: 10px;
 }
 
 #buttons-container button:nth-child(even) {
-  background-color: #111194;
+  background-color: #4e041d;
 }
 
 #buttons-container button:nth-child(odd) {
-  background-color: #01012a;
+  background-color: #1d020b;
 }
 
 #buttons-container button[disabled] {
@@ -90,8 +89,8 @@ body {
 }
 
 #buttons-container button:enabled:hover {
-  background-color: #b6e8ff;
-  color: black;
+  background-color: #7f062f;
+  color: white;
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
